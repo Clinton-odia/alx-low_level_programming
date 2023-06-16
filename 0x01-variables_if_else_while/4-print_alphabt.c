@@ -5,15 +5,17 @@
  */
 int main(void)
 {
-	char al;
+    char ch;
 
-	for (al = 'a'; al = 'z'; al++)
-	{
-		if (al != 'q' && al != 'e')
-		{
-			putchar(al);
-		}
-	}
-	putchar('\n');
-	return (0);
+    for (ch = 'a'; ch <= 'z'; ch++)
+    {
+        if (ch != 'q' && ch != 'e')
+        {
+            putchar(ch);
+        }
+    }
+
+    putchar('\n');
+
+    return 0;
 }
