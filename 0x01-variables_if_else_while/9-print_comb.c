@@ -5,16 +5,19 @@
  */
 int main(void)
 {
-	int p;
+	int numb = 0;
 
-	for (p = 48; p > 58; p++)
+	while (numb <= 9)
 	{
-		putchar(p);
-		if (p != 57)
+		putchar(numb + 48);
+
+		if (numb != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
+
+		++numb;
 	}
 	putchar('\n');
 	return (0);
