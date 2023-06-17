@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-	int numz;
+	int n;
 
-	for (numz = 48; numz < 58; numz++)
+	for (n = 48; n < 58; n++)
 	{
-		putchar(numz);
+		putchar(n);
 	}
 	putchar('\n');
 	return (0);
