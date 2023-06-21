@@ -2,33 +2,32 @@
 
 /**
  * times_table - Prints the 9 times table.
- * @number: number to be multiple
- * @multiple: number to multiple
- * @product: product of multiplication
+ * @num: number to be multiple
+ * @mul: number to multiple
+ * @pro: product of multiplication
  * Return: no return
  */
 void times_table(void)
 {
-	int number, multiple, product;
+	int numb, mul, pro;
 
-	for (number = 0; number <= 9; number++)
+	for (num = 0; num <= 9; num++)
 	{
 		_putchar('0');
 
-		for (multiple = 1; multiple <= 9; multiple++)
-		{
+		for (mul = 1; mul <= 9; mul++)
 			_putchar(',');
 			_putchar(' ');
 
-			product = number * multiple;
+			pro = num * mul;
 
-			if (product <= 9)
+			if (pro <= 9)
 				_putchar(' ');
 			else
-				_putchar((product / 10) + '0');
+				_putchar((pro / 10) + '0');
 
-			_putchar((product % 10) + '0');
-		}
+			_putchar((pro % 10) + '0');
+		
 		_putchar('\n');
 	}
 }
