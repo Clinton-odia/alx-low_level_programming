@@ -5,18 +5,18 @@
  */
 void more_numbers(void)
 {
-	int i;
-	int k;
+	int bb;
+	int ab;
 
-	for (i = 0 ; i <= 9 ; i++)
+	for (bb = 0 ; bb <= 9 ; bb++)
 	{
-		for (k = 0 ; k <= 14 ; k++)
+		for (ab = 0 ; ab <= 14 ; ab++)
 		{
-			if (k > 9)
+			if (ab > 9)
 			{
-				_putchar((k / 10) + '0');
+				_putchar((ab / 10) + '0');
 			}
-			_putchar((k % 10) + '0');
+			_putchar((ab % 10) + '0');
 		}
 		_putchar('\n');
 }
