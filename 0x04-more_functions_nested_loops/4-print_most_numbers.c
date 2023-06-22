@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "main.h"
 
 /**
  *print_most_numbers - print numbers expect 2 & 4
