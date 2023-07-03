@@ -2,25 +2,27 @@
 #include <stdio.h>
 
 /**
- * _strpbrk -Write a function that searches a string for any of a set of bytes.
+ *  _strspn  - Write a function that locates a character in a string.
  *@s: input
  *@accept: input
  * Return: Always 0.
  */
-char *_strpbrk(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
-while (*s != '\0')
+unsigned int i, j;
+for (i = 0; s[i] != '\0'; i++)
 {
-char *a = accept;
-while (*a != '\0')
+for (j = 0; accept[j] != '\0'; j++)
 {
-if (*s == *a)
+if (s[i] == accept[j])
 {
-return (s);
+break;
 }
-a++;
 }
-s++;
+if (accept[j] == '\0')
+{
+return (i);
 }
-return (NULL);
+}
+return (i);
 }
